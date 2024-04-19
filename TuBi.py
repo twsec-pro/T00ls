@@ -9,18 +9,11 @@ from email.utils import formataddr
 
 # t00ls 账号配置
 username = 'twsec00'  # 帐号
-password = '9022cc22c0fe15f88ff2deff900c554e'  # 密码MD5 32位(小写)
+password = '9022cc22c0fe15f88ff2deff900c554e'  
 question_num = 5  # 安全提问 参考下面
 question_answer = 'G3'  # 安全提问答案
 
-# 0 = 没有安全提问
-# 1 = 母亲的名字
-# 2 = 爷爷的名字
-# 3 = 父亲出生的城市
-# 4 = 您其中一位老师的名字
-# 5 = 您个人计算机的型号
-# 6 = 您最喜欢的餐馆名称
-# 7 = 驾驶执照的最后四位数字
+
 
 # 选择提醒方式
 notice = 1  # 0 = 钉钉  1 = 邮件 2 = 我全都要
@@ -38,14 +31,7 @@ req_headers = {
 }
 
 def t00ls_login(u_name, u_pass, q_num, q_ans):
-    """
-    t00ls 登录函数
-    :param u_name: 用户名
-    :param u_pass: 密码的 md5 值 32 位小写
-    :param q_num: 安全提问类型
-    :param q_ans: 安全提问答案
-    :return: 签到要用的 hash 和 登录后的 Cookies
-    """
+    
 
     login_data = {
         'action': 'login',
