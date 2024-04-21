@@ -1,9 +1,13 @@
 name: Run Python script
 
+#on:
+  #schedule:
+    # 每天的北京时间（UTC+8）九点执行
+    #- cron:  '0 1 * * *'
 on:
   schedule:
-    # 每天的北京时间（UTC+8）九点执行
-    - cron:  '0 1 * * *'
+    - cron:  '25 4 * * *'
+
 
 jobs:
   build:
