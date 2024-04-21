@@ -4,7 +4,7 @@ name: Run Python script
 on:
   schedule:
     # 每天的北京时间（UTC+8）13:26执行
-    - cron: '26 5 * * *'
+    - cron: '40 5 * * *'
 
 jobs:
   build:
