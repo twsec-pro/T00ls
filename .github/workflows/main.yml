@@ -1,13 +1,10 @@
 name: Run Python script
 
-#on:
-  #schedule:
-    # 每天的北京时间（UTC+8）九点执行
-    #- cron:  '0 1 * * *'
+# 触发条件
 on:
   schedule:
-    - cron:  '25 4 * * *'
-
+    # 每天的北京时间（UTC+8）13:26执行
+    - cron: '26 5 * * *'
 
 jobs:
   build:
@@ -27,13 +24,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests beautifulsoup4
 
-
+    # 列出当前目录
+    - name: List current directory
+      run: pwd
+      
+    # 查看当前目录文件  
     - name: List files
       run: ls -l
-
-
-
-
-    
-    
-
