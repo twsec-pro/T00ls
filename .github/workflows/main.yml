@@ -30,7 +30,6 @@ jobs:
 
 
 
-    - name: Run script
-      run: python TuBi.py
+    
     
 
