@@ -25,3 +25,6 @@ jobs:
 
     - name: Run script
       run: python TuBi.py
+    - name: List files
+      run: ls -l
+
