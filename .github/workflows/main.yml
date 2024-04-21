@@ -29,5 +29,5 @@ jobs:
       run: pwd
       
     # 查看当前目录文件  
-    - name: List files
-      run: ls -l
+    - name: TuBi
+      run: python TuBi.py
